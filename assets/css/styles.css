@@ -1,0 +1,64 @@
+:root{ 
+    --lightBackground: white;
+    --darkBackground: black;
+}
+
+html {
+    font-size: 32px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    margin-bottom: 1px;
+    padding: 50px;
+    background-color: var(--lightBackground);
+    border: 2px outset black;
+}
+
+aside {
+    flex: 1;
+    text-align: center;
+    margin: 1px;
+    padding: 20px;
+    background-color: var(--lightBackground);
+    border: 2px outset black;
+    height: auto;
+    position: relative;
+}
+
+#front-image { 
+    margin-top: 100px;
+    width:20rem;
+    height:20rem;
+}
+
+aside h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+section {
+    flex: auto;
+    text-align: center;
+    margin: 1px;
+    padding: 20px;
+    background-color: var(--lightBackground);
+    border: 2px outset black;
+    height: auto;
+}
+
+@media screen and (max-width: 726px){
+    #front-image { 
+        margin-top: 100px;
+        width:10rem;
+        height:10rem;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Zac Gilfoyle Blog</title>
+  </head>
+  <body>
+    <header>
+        <div class="row toggle">
+            <div class="col">
+              <p>DARK MODE</p>
+            </div>
+            <label class="switch col">
+              <input type="checkbox" id="theme-switcher">
+              <span class="slider round"></span>
+            </label>
+            <div class="col">
+              <p>LIGHT MODE</p>
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <aside>
+            <img src="./assets/images/cube2.png"  id="front-image" alt="3D grey and black cube with smaller cube within center">
+            <h1>My First Blog</h1>
+        </aside>
+        <section>
+            <h2>What's on your mind?</h2>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./assets/js/logic.js"></script>
+  </body>
+</html>
+
+<!-- GIVEN a personal blog
+
+WHEN I load the app,
+THEN I am presented with the landing page containing a form with labels and inputs for username, blog title, and blog content.
+WHEN I submit the form,
+THEN blog post data is stored to localStorage.
+WHEN the form submits,
+THEN I am redirected to the posts page.
+WHEN I enter try to submit a form without a username, title, or content,
+THEN I am presented with a message that prompts me to complete the form.
+WHEN I view the posts page,
+THEN I am presented with a header, with a light mode/dark mode toggle, and a "Back" button.
+WHEN I click the light mode/dark mode toggle,
+THEN the page content's styles update to reflect the selection.
+WHEN I click the "Back" button,
+THEN I am redirected back to the landing page where I can input more blog entries.
+WHEN I view the main content,
+THEN I am presented with a list of blog posts that are pulled from localStorage.
+WHEN I view localStorage,
+THEN I am presented with a JSON array of blog post objects, each including the post author's username, title of the post, and post's content.
+WHEN I take a closer look at a single blog entry in the list,
+THEN I can see the title, the content, and the author of the post.
+WHEN I view the footer,
+THEN I am presented with a link to the developer's portfolio. -->
