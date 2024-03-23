@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/form.css" />
     <title>Zac Gilfoyle Blog</title>
-  </head>
-  <body class="theme-bg dark-bg">
+</head>
+
+<body class="theme-bg dark-bg">
     <header class="theme-header dark">
         <div class="row toggle">
             <div class="col">
-              <p>Dark</p>
+                <p>Dark</p>
             </div>
             <label class="switch col">
-              <input type="checkbox" id="theme-switcher">
-              <span class="slider round"></span>
+                <input type="checkbox" id="theme-switcher">
+                <span class="slider round"></span>
             </label>
             <div class="col">
-              <p>Light</p>
+                <p>Light</p>
             </div>
-          </div>
+        </div>
     </header>
 
     <main class="theme-main dark">
         <aside>
-            <img src="./assets/images/cube2.png"  id="front-image" alt="3D grey and black cube with smaller cube within center">
+            <img src="./assets/images/cube2.png" id="front-image"
+                alt="3D grey and black cube with smaller cube within center">
             <h1>My First Blog</h1>
         </aside>
         <section>
             <h2>What's on your mind?</h2>
+            <form method="POST">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="username" name="username" id="username" placeholder="John" />
+                </div>
+                <div class="input-group">
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title" placeholder="My Blog" />
+                </div>
+                <div class="input-group">
+                    <label for="content">Content:</label>
+                    <input type="text" name="content" id="content" placeholder="Hello World!" />
+                </div>
+                <button id="sign-up">Sign Up</button>
+            </form>
         </section>
     </main>
 
@@ -38,7 +57,9 @@
     </footer>
 
     <script src="./assets/js/logic.js"></script>
-  </body>
+    <script src="./assets/js/form.js"></script>
+</body>
+
 </html>
 
 <!-- GIVEN a personal blog
