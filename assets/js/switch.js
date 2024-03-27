@@ -1,14 +1,11 @@
-//This contains JS for the Dark/Light mode button
-
+//This contains logic for the Dark/Light mode button
 // Access toggle switch HTML element
 const themeSwitcher = document.getElementById('theme-switcher');
 const themeBackground = document.querySelector('.theme-bg');
 const themeHeader = document.querySelector('.theme-header');
 const themeMain = document.querySelector('.theme-main');
-
 // Set default mode to dark
 let mode = 'dark';
-
 // Listen for a click event on toggle switch
 themeSwitcher.addEventListener('click', function () {
   // If mode is dark, apply light background

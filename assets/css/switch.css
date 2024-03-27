@@ -1,6 +1,5 @@
-/* This contains CSS for the Dark/Light mode button */
+/* This contains styles for the Dark/Light mode button itself */
 /* See 'styles.css' or 'blog.css' for specific Dark/Light mode stylings on relevant HTML page */
-
 .row {
     margin: 10px;
     display: flex;
