@@ -63,11 +63,51 @@ main {
 }
 
 .section-header {
-    flex: auto;
+    flex: 100%;
     text-align: left;
     margin: 1px;
     padding: 20px;
     border: 2px outset black;
+    height: auto;
+    background-color: azure;
+    color: black;
+}
+
+.blog-row {
+    flex: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.blog-col-left {
+  flex: 1 1 10%;
+}
+
+.blog-col-right {
+    flex: 1 1 90%;
+}
+
+.blog-title {
+    text-align: left;
+    margin: 1px;
+    padding: 20px;
+    border: 2px outset black;
+    height: auto;
+}
+
+.blog-name {
+    text-align: left;
+    margin: 1px;
+    padding: 20px;
+    border: 2px outset black;
+    height: auto;
+}
+
+.blog-content {
+    flex: 100%;
+    text-align: left;
+    margin: 1px;
+    padding: 20px;
     height: auto;
 }
 
