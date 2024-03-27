@@ -3,7 +3,7 @@ const goBack = document.getElementById('back');
 const blogSection = document.getElementById('main-blog');
 let blogArray = JSON.parse(localStorage.getItem('blogArray')) || []
 //Create a UI element for each blog post
-for(i = 0; i < blogArray.length; i++) {
+for (i = 0; i < blogArray.length; i++) {
     //Assign variables from blog array
     let titleVal = blogArray[i].title;
     let nameVal = blogArray[i].username;
@@ -31,7 +31,7 @@ for(i = 0; i < blogArray.length; i++) {
     colR.appendChild(bContent);
     //Assign text in new elements
     btitle.textContent = titleVal;
-    bName.textContent = nameVal;
+    bName.textContent = (nameVal);
     bContent.textContent = contentVal;
 }
 //A button for navigating back to form page

@@ -22,7 +22,8 @@ function storeInformation(){
 //Call function that stores locally and change window page
 postBlog.addEventListener('click', function(event){
     event.preventDefault();
-    
+    //Check if input fields are empty
+
     storeInformation();
     window.location = './blog.html';
   });   

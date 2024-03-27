@@ -80,7 +80,7 @@ main {
 }
 
 .blog-col-left {
-  flex: 1 1 10%;
+    flex: 1 1 10%;
 }
 
 .blog-col-right {
@@ -109,6 +109,23 @@ main {
     margin: 1px;
     padding: 20px;
     height: auto;
+}
+
+#link {
+    background-color: var(--darkMode);
+    border-radius: 8px;
+    padding: 2px;
+    border: 2px outset black;
+    color: azure;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    margin-top: 5rem;
+    padding: 50px;
+    background-color: azure;
+    border: 2px outset black;
 }
 
 @media screen and (max-width: 726px) {
