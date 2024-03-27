@@ -19,11 +19,12 @@ button {
 .input-group {
     text-align: left;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 label {
     color: grey;
+    margin-bottom: 2rem;
 }
 
 input {
@@ -43,5 +44,42 @@ input {
     transition-property: background-color, color;
     transition-timing-function: ease, ease;
     vertical-align: middle;
-    width: 100%;
+    width: 98.5%;
+}
+
+textarea {
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    border-width: 1px;
+    color: black;
+    font-size: 1.1em;
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    line-height: 40px;
+    margin: 0;
+    margin-top: 10px;
+    /* adjust widths and text area */
+    width:min-content;
+    max-width: 1440px; 
+    padding: 8px 8px 16px 8px;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.2s, 0.2s;
+    transition-property: background-color, color;
+    transition-timing-function: ease, ease;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1530px) {
+    textarea {
+        max-width: 600px;
+    }
+}
+
+
+@media screen and (max-width: 696px) {
+    textarea {
+        max-width: 250px;
+    }
 }
